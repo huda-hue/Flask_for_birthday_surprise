@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Selamat Ulang Tahun KIKI</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static',filename='style.css') }}"
+    />
+    <script src="{{ url_for('static',filename='script.js') }}"></script>
+  </head>
+  <body class="center">
+    <audio
+      src="{{ url_for('static',filename='xyz.mp3') }}"
+      type="audo/mpeg"
+    ></audio>
+    <h1>Selamat Ulang Tahun, Cintaku</h1>
+    <p>Hari ini dunia jadi lebih indah karena kamu lahir</p>
+    <div class="hearts"></div>
+    <button onclick="showMessage()">Klik aku</button>
+    <p id="message" class="hidden">
+      Aku bersyukur banget punya kamu. Semoga kamu selalu sehat dan bahagia ya!
+    </p>
+  </body>
+</html>
