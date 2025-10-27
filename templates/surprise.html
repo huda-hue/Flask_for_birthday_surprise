@@ -11,8 +11,8 @@
     <script src="{{ url_for('static',filename='script.js') }}"></script>
   </head>
   <body class="center">
-    <audio
-      src="{{ url_for('static',filename='xyz.mp3') }}"
+    <audio controls>
+	 <source src="{{ url_for('static',filename='audio/xyz.mp3') }}"
       type="audo/mpeg"
     ></audio>
     <h1>Selamat Ulang Tahun, Cintaku</h1>
