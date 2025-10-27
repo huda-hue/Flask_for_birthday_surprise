@@ -11,16 +11,19 @@
     <script src="{{ url_for('static',filename='script.js') }}"></script>
   </head>
   <body class="center">
-    <audio controls>
-	 <source src="{{ url_for('static',filename='audio/xyz.mp3') }}"
-      type="audo/mpeg"
-    ></audio>
-    <h1>Selamat Ulang Tahun, Cintaku</h1>
-    <p>Hari ini dunia jadi lebih indah karena kamu lahir</p>
-    <div class="hearts"></div>
-    <button onclick="showMessage()">Klik aku</button>
-    <p id="message" class="hidden">
-      Aku bersyukur banget punya kamu. Semoga kamu selalu sehat dan bahagia ya!
-    </p>
-  </body>
+
+	<button onclick="showMessage()">Klik aku</button>
+	<div id="message" class="hidden">
+		<h1>Selamat Ulang Tahun, Cintaku</h1>
+		<div class="hearts"></div>
+		<p>
+			Hari ini dunia jadi lebih indah karena kamu lahir<br>
+      	Aku bersyukur banget punya kamu. Semoga kamu selalu sehat dan bahagia ya!
+    	</p>
+	</div>
+	<audio id="bg-music" loop>
+		<source src="{{ url_for('static',filename='audio/xyz.mp3') }}" type="audio/mpeg">
+	</audio>
+
+</body>
 </html>

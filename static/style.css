@@ -47,3 +47,7 @@ button:hover {
     transform: translateY(-20px);
   }
 }
+
+audio {
+	display: none;
+}
